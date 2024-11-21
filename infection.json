@@ -1,0 +1,22 @@
+{
+    "source": {
+        "directories": [
+            "src"
+        ]
+    },
+    "logs": {
+        "text": "infection.log",
+        "html": "infection.html",
+        "summary": "summary.log",
+        "json": "infection.json",
+        "perMutator": "per-mutator.md"
+    },
+    "mutators": {
+        "@default": true
+    },
+    "testFramework": "phpunit",
+    "bootstrap": "./vendor/autoload.php",
+    "initialTestsPhpOptions": "-d xdebug.mode=coverage",
+    "minMsi": 60,
+    "minCoveredMsi": 80
+}
